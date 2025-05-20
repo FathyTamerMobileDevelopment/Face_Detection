@@ -350,7 +350,7 @@
         const musicData = {
             happy: [
                 { name: "Hakuna Matata - Happy Song.mp3", path: "" },
-                { name: "happy.mp3", path: "/data/music/happy/happy.mp3" }
+                { name: "happy.mp3", path: "https://www.youtube.com/watch?v=2bEQvnP4D5o" }
             ],
             sad: [
                 { name: "sad.mp3", path: "/data/music/sad/sad.mp3" }
@@ -556,7 +556,7 @@
                         updateStatus(`Detected ${emotion} emotion, changing music...`);
                         
                         // In a real app, we would set the actual audio source
-                        // audioPlayer.src = randomMusic.path;
+                        audioPlayer.src = randomMusic.path;
                         
                         // For demo, we just update the UI
                         audioPlayer.setAttribute('data-emotion', mappedEmotion);
